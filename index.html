@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XO</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div id="names">
+        
+        <p id="namep1" style="color: blue;">O: </p>
+        <p id="namep1point">0</p>
+        <p id="namep2point">0</p>
+        <p id="namep2" style="color: red;">X: </p>
+        <br>
+        <input id="editname" onclick="resetname()" type="button" value="Edite name">
+        <input type="button" value="Reset points" onclick="resetpoint()" id="rpoints">
+        <p id="turn">Player O's turn</p>
+        
+    </div>
+    <p id="alert">test</p>
+    <div class="start" id="play">
+        <div class="div-names">
+        <label for="p1">O</label>
+        <input style="background-color: rgb(0, 0, 255); color:aliceblue;" type="text" name="p1" class="player" placeholder="Player1" id="player1">
+        </div>
+        <div class="div-names">
+        <label for="p2">X</label>
+        <input style="background-color: rgb(255, 0, 0); color:aliceblue;" type="text" name="p2" class="player" placeholder="Player2" id="player2"><br>
+        </div>
+        <input type="button" class="bt-start" onclick="setlocalstorage()" value="Start">
+        
+    </div>
+    
+    <div id="board">
+        <div id="1" onclick="play(this)" class="q1">?</div>
+        <div id="2" onclick="play(this)" class="q1">?</div>
+        <div id="3" onclick="play(this)" class="q1">?</div>
+        <div id="4" onclick="play(this)" class="q1">?</div>
+        <div id="5" onclick="play(this)" class="q1">?</div>
+        <div id="6" onclick="play(this)" class="q1">?</div>
+        <div id="7" onclick="play(this)" class="q1">?</div>
+        <div id="8" onclick="play(this)" class="q1">?</div>
+        <div id="9" onclick="play(this)" class="q1">?</div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="scripts.js"></script>
+</body>

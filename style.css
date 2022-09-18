@@ -1,0 +1,157 @@
+body{
+    margin: 0;
+    background-color: rgb(218, 255, 224);
+    overflow: hidden;
+}
+#alert{
+    position: absolute;
+    width: 100%;
+    margin-top: 15% ;
+    z-index: 1;
+    font-size: 2vw;
+    background-color: red;
+    color: white;
+    text-align: center;
+    visibility: hidden;
+   
+}
+label{
+    font-size: 25px;
+}
+.q1{
+    
+    cursor: pointer;
+    text-align: center;
+    font-size: 3vw;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    border: rgb(0, 0, 0) solid 1px;
+    width: 25%;
+    height: 30%;
+    background-color: rgb(255, 255, 255);
+    
+}
+#board{
+    position: absolute;
+    visibility: hidden;
+    display: inline-block;
+    width: 30%;
+    margin-top: 10%;
+    height: 25vw;
+    margin-left: 35%;
+}
+#play{
+    
+    margin-top: 5%;
+    visibility: visible;
+    margin-left: 28%;
+}
+.player{
+    
+    font-size: 1.5vw;
+    
+    border: none;
+    border-bottom: black solid 1px;
+    border-top: black solid 1px;
+    outline-width: 0;
+    
+}
+.bt-start{
+    cursor: pointer;
+    width: 10%;
+    color: aliceblue;
+    background-color: blue;
+    border: none;
+    font-size: 1.5vw;
+    margin-top: 5%;
+    margin-left:23%;
+    display: block;
+    border-radius: 10%;
+    transition: 0.5s;
+}
+.bt-start:hover{
+    background-color: red;
+    border-radius: 0px;
+
+}
+.div-names{
+    
+    margin-left: 0.5%;
+    display: inline-block;
+}
+#names p {
+    font-style: oblique;
+   
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2vw;
+    display: inline-block;
+    
+}
+#namep2{
+    float: right;
+    margin-right: 5%;
+}
+#namep1point{
+    
+    border: 2px rgb(0, 255, 255) double;
+    text-align: center;
+    width: 5%;
+    margin-left: 5%;
+}
+#namep2point{
+    
+    border: 2px rgb(0, 255, 255) double;
+    text-align: center;
+    width: 5%;
+    float: right;
+    margin-right: 3%;
+}
+#namep1{
+    margin-left: 5%;
+}
+#names{
+    display: inline-block;
+    position: absolute;
+    visibility: hidden;
+    background-color: beige;
+    width: 100%;
+    
+    
+    border: 2px black dashed;
+    transition: 1s;
+    
+}
+#turn{
+    width: 100%;
+    color: aliceblue;
+    text-align: center;
+    background-color: blue;
+    
+}
+#editname{
+    float: left;
+    border: none;
+    font-size: 1.5vw;
+    background-color: black;
+    color: aliceblue;
+    transition: 0.5s;
+    margin-left: 35%;
+
+}
+#editname:hover{
+    background-color: azure;
+    color: black;
+}
+#rpoints{
+    float: right;
+    border: none;
+    font-size: 1.5vw;
+    background-color: black;
+    color: aliceblue;
+    transition: 0.5s;
+    margin-right: 35%;
+}
+#rpoints:hover{
+    background-color: azure;
+    color: black;
+}
