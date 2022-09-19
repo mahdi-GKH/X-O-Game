@@ -1,4 +1,4 @@
-
+//add keys and value in localStorage
 let i = Object.keys(localStorage);
 if (i == 0){
     localStorage.setItem('user1', 'player1');
@@ -9,7 +9,7 @@ if (i == 0){
 }
 
 
-
+//Check names and scores to edit or start a game
 var namep1localhost = localStorage.getItem('user1');
     var namep2localhost = localStorage.getItem('user2');
 if (namep1localhost == 'player1' ||  namep2localhost == 'player2'){
@@ -54,18 +54,21 @@ let number ;
 
 
 
-//Functions
 
 
-//Start button to ready the game
 
 
+
+//add names and numbers in html page
 document.getElementById('namep1').innerHTML += localStorage.getItem('user1');
 
 document.getElementById('namep2').innerHTML += localStorage.getItem('user2');
 document.getElementById('namep1point').innerHTML = localStorage.getItem('user1point');
 
 document.getElementById('namep2point').innerHTML = localStorage.getItem('user2point');
+
+//Functions
+//set items in localStorage
 function setlocalstorage(){
     namep1 = document.getElementById('player1').value;
 
@@ -75,34 +78,6 @@ function setlocalstorage(){
     localStorage.setItem('user2', namep2);
     localStorage.setItem('user1', namep1);
     location.reload();
-    
-/*
-    document.getElementById('play').style.visibility = 'hidden';
-    document.getElementById('names').style.visibility = 'visible';
-    document.getElementById('board').style.visibility = 'visible';
-    */
-    
-    /*
-    
-    
-
-    if (namep1 == ''){
-        document.getElementById('namep1').innerHTML += 'Player1';
-        namep1 = 'Player1'
-    }else{
-        document.getElementById('namep1').innerHTML += namep1;
-    }
-    if (namep2 == ''){
-        document.getElementById('namep2').innerHTML += 'Player2';
-        namep1 = 'Player2'
-    }else{
-        document.getElementById('namep2').innerHTML += namep2;
-    }
-    document.getElementById('play').style.visibility = 'hidden';
-    document.getElementById('names').style.visibility = 'visible';
-    document.getElementById('board').style.visibility = 'visible';
-*/
-
 }
 
 
@@ -166,7 +141,7 @@ function play(a){
     }
     
 }
-document.getElementsByClassName('q1').innerHTML = '1';
+
 //Always check who wins
 function check_game(){
     
@@ -339,12 +314,13 @@ function check_game(){
     
 }
 
-
+//edit player name
 function resetname(){
     localStorage.setItem('user1', 'player1');
     localStorage.setItem('user2', 'player2');
     location.reload();
 }
+// points == 0
 function resetpoint(){
     localStorage.setItem('user1point', 0);
     localStorage.setItem('user2point', 0);
